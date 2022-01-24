@@ -12,4 +12,20 @@ body {
 
 nav {
   background-color: #f55a5a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.nav--logo {
+  color: white;
+  height: 38px;
+}
+
+.nav--title {
+  color: white;
+  font-weight: 500;
+  letter-spacing: -2px;
+  padding-left: 7px;
 }
