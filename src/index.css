@@ -29,3 +29,12 @@ nav {
   letter-spacing: -2px;
   padding-left: 7px;
 }
+
+.card {
+  display: flex;
+}
+
+.card--image {
+  width: 125px;
+  height: 168px;
+}

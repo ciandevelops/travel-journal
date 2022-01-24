@@ -3,12 +3,16 @@ import { LocationMarkerIcon } from "@heroicons/react/solid";
 const Card = (props) => {
   console.log(props.item.imageUrl);
   return (
-    <div>
-      <div className="card--image">
-        <img src={props.item.imageUrl} alt="card-image" />
+    <div className="card">
+      <div className="card--left">
+        <img
+          src={props.item.imageUrl}
+          alt="card-image"
+          className="card--image"
+        />
       </div>
 
-      <div className="card--info">
+      <div className="card--right">
         <h2>
           <LocationMarkerIcon height={25} color={"#F55A5A"} />
           {props.item.location}
