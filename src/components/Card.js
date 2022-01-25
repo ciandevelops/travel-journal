@@ -13,20 +13,23 @@ const Card = (props) => {
       </div>
 
       <div className="card--right">
-        <h2>
-          <LocationMarkerIcon height={25} color={"#F55A5A"} />
-          {props.item.location}
-        </h2>
+        <div className="card--subtitle">
+          <h4 className="card--location">
+            <LocationMarkerIcon height={25} color={"#F55A5A"} />
+            {props.item.location.toUpperCase()}
+          </h4>
+          <a className="card--link" href={props.item.googleMapsUrl}>
+            View On Google Maps
+          </a>
+        </div>
 
-        <a href={props.item.googleMapsUrl}>View On Google Maps</a>
+        <h1 className="card--title">{props.item.title}</h1>
 
-        <h1>{props.item.title}</h1>
-
-        <b>
+        <b className="card--bold">
           {props.item.startDate} - {props.item.endDate}
         </b>
 
-        <p> {props.item.description}</p>
+        <p className="card--desc"> {props.item.description}</p>
       </div>
     </div>
   );

@@ -32,9 +32,58 @@ nav {
 
 .card {
   display: flex;
+  padding: 40px;
+  border-bottom: 1px solid #918e9b;
 }
 
 .card--image {
-  width: 125px;
-  height: 168px;
+  height: 200px;
+  width: 200px;
+
+  border-radius: 5px;
+}
+
+.card--left {
+  flex: 30%;
+  align-items: center;
+  text-align: center;
+}
+
+.card--right {
+  flex: 70%;
+}
+
+.card--subtitle {
+  display: flex;
+  align-items: center;
+}
+
+.card--location {
+  color: #2b283a;
+  font-weight: 400;
+  align-items: center;
+  padding-bottom: 10px;
+  padding-top: 20px;
+}
+
+.card--link {
+  color: #918e9b;
+  font-weight: 400;
+  padding-left: 12px;
+}
+
+.card--title {
+  color: #2b283a;
+  font-weight: 700;
+  padding-bottom: 14px;
+}
+
+.card--desc {
+  font-weight: 400;
+  padding-top: 10px;
+}
+
+.card--bold {
+  color: #2b283a;
+  font-weight: bold;
 }
